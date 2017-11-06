@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ContentProviders</string>
+    <string name="title_activity_view_calander">ViewCalanderActivity</string>
+</resources>

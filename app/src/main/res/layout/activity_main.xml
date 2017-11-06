@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ricky.chen.bcit.ca.contentproviders.MainActivity">
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="316dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Subject"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/date"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Content"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="137dp"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/subject"
+        android:layout_alignStart="@+id/time" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Date - YYYYMMDD"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="223dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/content" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp"
+        android:layout_marginStart="17dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="End time - HHMM"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="396dp"
+        android:onClick="add"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/view"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="396dp"
+        android:onClick="view"
+        android:layout_alignBaseline="@+id/submit"
+        android:layout_alignBottom="@+id/submit"
+        android:layout_toEndOf="@+id/date" />
+
+    <EditText
+        android:id="@+id/starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/time"
+        android:layout_alignStart="@+id/time"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Start time - HHMM" />
+
+</RelativeLayout>
